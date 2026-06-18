@@ -6,11 +6,11 @@ Hello! I'm prarthana prajith, a first-year B.Tech student in Computer Science an
 
 ## Degree / Department
 
-B.Tech in Computer Science and Engineering (Artificial Intelligence & Data Science)
+B.Tech in Computer Science and Engineering (Artificial Intelligence & machine learning)
 
 ## College
 
-Mentor College of Engineering, Muvattupuzha
+Mentor academy for design entreprenurship innovation and technology, Muvattupuzha
 
 ## Skills
 
@@ -18,58 +18,38 @@ Mentor College of Engineering, Muvattupuzha
 * Team Collaboration
 * Leadership
 * Web Development
-* Object-Oriented Programming
+* 
 
 ## Programming Languages Known
 
 * Python
-* JavaScript
-* C
+* Java(basics)
+* C(basics)
 
 ## Technologies Known
 
+
+* vs code
+* Git & GitHub
 * HTML
 * CSS
-* Flask
-* REST APIs
-* Git & GitHub
-* MongoDB (Basic)
-* Node.js (Basic)
+
 
 ## Previous Projects Worked On
 
-### MERN ThinkBoard
+# FLEXION FLOW
 
-A note-taking and task management web application developed using the MERN stack with CRUD operations and database integration.
+A Mobile app that helps people to do physiotherapy from home itself with the prescription of a doctor
 
-### E-Commerce Catalogue Manager
 
-A catalogue management system built using Flask, REST APIs, HTML, CSS, and JavaScript. Supports catalogue creation, update, deletion, search, and authentication.
-
-### Student Report Card Generator
-
-A Python-based application developed using Object-Oriented Programming concepts, custom exceptions, input validation, and exception handling.
-
-### Task Management CLI Application
-
-A command-line task management system developed in Python using OOP principles for managing users and tasks.
-
-### Student Management System
-
-A C-based application for managing student records and academic information.
 
 ## Tech Stack Used in Projects
 
 * Python
-* Flask
-* JavaScript
+* flutter
 * HTML
 * CSS
-* MongoDB
-* Node.js
-* Express.js
-* REST APIs
-* Git & GitHub
+*
 
 ## Areas of Interest
 
@@ -77,5 +57,4 @@ A C-based application for managing student records and academic information.
 * Artificial Intelligence
 * Backend Development
 * Web Application Development
-* Software Engineering
-* Database Management Systems
+* machine learning
