@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install --prefix Prarthana-prajith-Profile",
+  "buildCommand": "npm run build --prefix Prarthana-prajith-Profile",
+  "outputDirectory": "Prarthana-prajith-Profile/dist"
+}
