@@ -1,90 +1,34 @@
+import "./Hero.css";
+
 export default function Hero() {
   return (
-    <section className="section" style={styles.container}>
-      <h1 style={styles.title}>Hi, I'm Prarthana Prajith 👋</h1>
+    <section id="home" className="hero">
 
-      <p style={styles.subtitle}>
-        B.Tech AI & ML Student | Frontend Developer
-      </p>
+      <div className="hero-text">
+        <h1>
+          Hi, I'm <span className="gradient-text">Prarthana Prajith</span>
+        </h1>
 
-      <p style={styles.description}>
-        I am passionate about building modern web applications using React.
-        I love creating clean, responsive and user-friendly interfaces.
-      </p>
+        <h3>Front-End Developer | AI & ML Student</h3>
 
-      <div style={styles.buttonGroup}>
-        <button
-  style={styles.button}
-  onClick={() =>
-    document.getElementById("contact").scrollIntoView({
-      behavior: "smooth",
-    })
-  }
->
-  Contact Me
-</button>
-        <button
-  style={styles.button}
-  onClick={() =>
-    document.getElementById("projects").scrollIntoView({
-      behavior: "smooth",
-    })
-  }
->
-  View Projects
-</button>
+        <p>
+          A passionate first-year BTech AI & ML student with a strong interest
+          in Front-End Development, UI/UX Design, and innovative technologies.
+          Currently building modern and responsive web applications while
+          exploring real-world projects.
+        </p>
+
+        <div className="hero-buttons">
+          <a href="#contact" className="btn btn-primary">
+            Contact Me
+          </a>
+
+          <a href="#projects" className="btn btn-outline">
+            View Projects
+          </a>
+        </div>
       </div>
+
     </section>
   );
 }
-
-const styles = {
-  container: {
-    height: "100vh",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "#0f172a",
-    color: "white",
-    textAlign: "center",
-    padding: "20px",
-  },
-  title: {
-    fontSize: "40px",
-    marginBottom: "10px",
-  },
-  subtitle: {
-    fontSize: "18px",
-    opacity: 0.8,
-    marginBottom: "10px",
-  },
-  description: {
-    fontSize: "16px",
-    opacity: 0.7,
-    maxWidth: "500px",
-    marginBottom: "20px",
-  },
-  buttonGroup: {
-    display: "flex",
-    gap: "15px",
-  },
-  primaryButton: {
-    padding: "10px 18px",
-    background: "#38bdf8",
-    border: "none",
-    borderRadius: "8px",
-    cursor: "pointer",
-    color: "black",
-    fontWeight: "bold",
-  },
-  secondaryButton: {
-    padding: "10px 18px",
-    background: "transparent",
-    border: "2px solid #38bdf8",
-    borderRadius: "8px",
-    cursor: "pointer",
-    color: "#38bdf8",
-    fontWeight: "bold",
-  },
-};

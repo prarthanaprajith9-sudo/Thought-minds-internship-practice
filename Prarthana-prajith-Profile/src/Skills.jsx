@@ -1,74 +1,43 @@
+import "./Section.css";
+
 export default function Skills() {
-  const skillData = {
-    "Programming Languages": ["HTML", "CSS", "Java", "Python"],
-    "Frontend": ["React", "JavaScript"],
-    "Backend": ["Node.js (learning)"],
-    "Database": ["MySQL (basic)"],
-    "Tools": ["VS Code", "Git", "GitHub"],
-    "Soft Skills": ["Time Management", "Leadership", "Communication"],
-  };
-
   return (
-    <section style={styles.container}>
-      <h2 style={styles.title}>Skills</h2>
+    <section id="skills">
+      <h2 className="section-title">Skills</h2>
 
-      <div style={styles.grid}>
-        {Object.entries(skillData).map(([category, items], index) => (
-          <div key={index} style={styles.card}>
-            <h3 style={styles.category}>{category}</h3>
+      <div className="skills-grid">
 
-            <div style={styles.items}>
-              {items.map((item, i) => (
-                <span key={i} style={styles.badge}>
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+        <div className="card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React.js, Flutter UI</p>
+        </div>
+
+        <div className="card">
+          <h3>Backend</h3>
+          <p>Basic Node.js, API Understanding</p>
+        </div>
+
+        <div className="card">
+          <h3>Databases</h3>
+          <p>MySQL, Firebase (Basics)</p>
+        </div>
+
+        <div className="card">
+          <h3>Tools</h3>
+          <p>VS Code, Git, GitHub, Vercel</p>
+        </div>
+
+        <div className="card">
+          <h3>Programming</h3>
+          <p>Java, Python</p>
+        </div>
+
+        <div className="card">
+          <h3>Soft Skills</h3>
+          <p>Leadership, Time Management, Teamwork, Communication, Problem Solving</p>
+        </div>
+
       </div>
     </section>
   );
 }
-
-const styles = {
-  container: {
-    padding: "60px 20px",
-    background: "#0f172a",
-    color: "white",
-    textAlign: "center",
-  },
-  title: {
-    fontSize: "30px",
-    marginBottom: "25px",
-  },
-  grid: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: "15px",
-    justifyContent: "center",
-  },
-  card: {
-    background: "#1e293b",
-    padding: "20px",
-    borderRadius: "12px",
-    width: "250px",
-  },
-  category: {
-    fontSize: "18px",
-    marginBottom: "10px",
-    color: "#38bdf8",
-  },
-  items: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: "8px",
-    justifyContent: "center",
-  },
-  badge: {
-    background: "#334155",
-    padding: "5px 10px",
-    borderRadius: "6px",
-    fontSize: "12px",
-  },
-};

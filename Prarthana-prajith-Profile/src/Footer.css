@@ -1,0 +1,14 @@
+.footer{
+  background:
+  linear-gradient(
+  90deg,
+  #2563eb,
+  #7c3aed
+  );
+
+  color:white;
+
+  text-align:center;
+
+  padding:30px;
+}

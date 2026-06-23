@@ -1,49 +1,38 @@
+import Navbar from "./Navbar";
 import Hero from "./Hero";
 import About from "./About";
-import Education from "./Education";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import Education from "./Education";
 import Certifications from "./Certifications";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-export default function App() {
+function App() {
   return (
     <>
-      <div id="home">
-        <Hero />
-      </div>
+      <Navbar />
 
-      <div id="about">
-        <About />
-      </div>
+      <Hero />
 
-      <div id="education">
-        <Education />
-      </div>
+      <About />
 
-      <div id="skills">
-        <Skills />
-      </div>
+      <Skills />
 
-      <div id="projects">
-        <Projects />
-      </div>
+      <Projects />
 
-      <div id="experience">
-        <Experience />
-      </div>
+      <Experience />
 
-      <div id="certifications">
-        <Certifications />
-      </div>
+      <Education />
 
-      <div id="contact">
-        <Contact />
-      </div>
+      <Certifications />
+
+      <Contact />
 
       <Footer />
     </>
   );
 }
+
+export default App;

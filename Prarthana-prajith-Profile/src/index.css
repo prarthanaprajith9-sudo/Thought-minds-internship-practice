@@ -1,133 +1,141 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+  scroll-behavior:smooth;
+}
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
+:root{
+  --primary:#2563eb;
+  --secondary:#7c3aed;
+  --accent:#f59e0b;
+  --text:#0f172a;
+  --text-light:#64748b;
+  --white:#ffffff;
+}
+
+/* Body */
+body{
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fafc 45%,
+    #eef4ff 100%
+  );
+
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+/* Section */
+section{
+  padding:100px 10%;
+}
+
+/* Links */
+a{
+  text-decoration:none;
+}
+
+/* Images */
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* Buttons Global */
+.btn{
+  display:inline-block;
+  padding:14px 30px;
+  border-radius:12px;
+  font-weight:600;
+  transition:0.3s ease;
+  cursor:pointer;
+}
+
+.btn-primary{
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+  );
+
+  color:white;
+}
+
+.btn-outline{
+  border:2px solid #2563eb;
+  color:#2563eb;
+  background:white;
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6{
+  color:var(--text);
+}
+
+/* Text */
+p{
+  color:var(--text-light);
+  line-height:1.8;
+}
+
+/* Smooth Animation */
+.card,
+.btn,
+.hero-img img{
+  transition:all .3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#f1f5f9;
+}
+
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(
+    #2563eb,
+    #7c3aed
+  );
+  border-radius:20px;
+}
+
+/* Responsive */
+@media(max-width:992px){
+
+  section{
+    padding:80px 7%;
   }
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+@media(max-width:768px){
+
+  section{
+    padding:70px 5%;
   }
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
+}
+
+@media(max-width:576px){
+
+  section{
+    padding:60px 5%;
   }
-}
 
-body {
-  margin: 0;
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
-}
-.section {
-  opacity: 0;
-  transform: translateY(40px) scale(0.98);
-  animation: reveal 0.9s ease forwards;
-}
-
-@keyframes reveal {
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-/* Smooth hover effect for cards */
-.card-hover {
-  transition: all 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
 }
