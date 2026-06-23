@@ -13,8 +13,26 @@ export default function Hero() {
       </p>
 
       <div style={styles.buttonGroup}>
-        <button style={styles.primaryButton}>Contact Me</button>
-        <button style={styles.secondaryButton}>View Projects</button>
+        <button
+  style={styles.button}
+  onClick={() =>
+    document.getElementById("contact").scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+>
+  Contact Me
+</button>
+        <button
+  style={styles.button}
+  onClick={() =>
+    document.getElementById("projects").scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+>
+  View Projects
+</button>
       </div>
     </section>
   );

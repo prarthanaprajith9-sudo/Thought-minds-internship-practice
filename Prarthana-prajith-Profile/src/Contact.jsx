@@ -14,7 +14,14 @@ export default function Contact() {
           <p><b>LinkedIn:</b> www.linkedin.com/in/prarthana-prajith-704a6b3a9</p>
         </div>
 
-        <button style={styles.button}>Hire Me</button>
+        <button
+  style={styles.button}
+  onClick={() =>
+    window.location.href = "prarthanaprajith9@gmail.com"
+  }
+>
+  Hire Me
+</button>
       </div>
     </section>
   );
